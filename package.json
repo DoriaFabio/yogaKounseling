@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./style.css -o ./output.css --watch",
+    "dev:server": "serve .",
+    "dev": "concurrently \"npm run build:css\" \"npm run dev:server\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,9 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "serve": "^14.2.4"
   }
 }
