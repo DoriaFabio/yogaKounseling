@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fc1af3224.js" crossorigin="anonymous"></script>
     <title>Yoga Kounseling</title>
 </head>
 
@@ -12,10 +13,10 @@
     <header class="bg-emerald-200">
         <div class="flex justify-between py-2.5 mx-5">
             <h1 class="font-bold text-purple-500 text-2xl">Yoga Kounseling</h1>
-            <div class="flex">
+            <!-- <div class="flex">
                 <a href="./about.html" class="font-bold text-purple-300 text-xl px-5">About</a>
                 <a href="./contact.html" class="font-bold text-purple-300 text-xl">Contact</a>
-            </div>
+            </div> -->
         </div>
     </header>
     <main>
@@ -33,27 +34,68 @@
                 </div>
             </div>
         </section>
-        <section class="flex my-10 mx-52 gap-10">
-            <div class="w-[60%] py-7">
+        <section class="flex flex-col md:flex-row my-10 md:my-20 mx-5 md:mx-20 lg:mx-52 gap-6 md:gap-10">
+            <div class="w-full md:w-[60%] py-5 md:py-10">
                 <h2 class="text-xl font-bold">Che cos'è lo YogaKounseling?</h2>
-                <p class="text-[16px] ">Lo YogaKounseling é uno strumento innovativo che unisce la tecnologia del
-                    Kundalini Yoga e del
-                    Counseling. E' un percorso individuale che ti aiuta a superare un momento di difficoltà utilizzando
-                    le tue risorse.
+                <p class="text-[16px] leading-relaxed">
+                    Lo YogaKounseling è uno strumento innovativo che unisce la tecnologia del
+                    Kundalini Yoga e del Counseling. È un percorso individuale che ti aiuta a superare
+                    un momento di difficoltà utilizzando le tue risorse.
                     Il Counseling ti aiuta a decidere responsabilmente nel rispetto dei tuoi sentimenti e del tuo
-                    vissuto. Con i tuoi tempi e nel rispetto dei tuoi desideri.
-                    Il Kundalini Yoga attraverso posture, tecniche meditative, esercizi di respirazione, permette di
-                    lavorare inconsapevolmente sui blocchi e le resistenze, migliorando la salute e la qualità della
-                    vita. </p>
+                    vissuto,
+                    con i tuoi tempi e nel rispetto dei tuoi desideri.
+                    Il Kundalini Yoga, attraverso posture, tecniche meditative ed esercizi di respirazione,
+                    permette di lavorare inconsapevolmente sui blocchi e le resistenze, migliorando la salute
+                    e la qualità della vita.
+                </p>
             </div>
-            <div class="w-[40%]">
-                <img src="./img/elementor-placeholder-image.png" alt="Immagine yoga" class="rounded-2xl">
+            <div class="w-full md:w-[40%]">
+                <img src="./img/elementor-placeholder-image.png" alt="Immagine yoga" class="rounded-2xl w-full h-auto">
             </div>
         </section>
-        <section>
-            <h2 class="text-center font-bold text-2xl">Perchè lo YogaKounseling può aiutarti?</h2>
+
+        <section class="flex items-center flex-col">
+            <h2 class="text-center font-bold text-2xl mb-5">Perchè lo YogaKounseling può aiutarti?</h2>
+            <img src="./img/elementor-placeholder-image.png" alt="Immagine YogaKounseling con cerchio"
+                class="w-[700px]">
+        </section>
+        <section class="flex items-center flex-col my-20">
+            <h2 class="font-bold text-center text-2xl">Testimonianze</h2>
         </section>
     </main>
+    <footer class="bg-purple-300 py-7 grid grid-cols-3 gap-2 justify-items-center px-3">
+        <!-- Contatti -->
+        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit">
+            <h3 class="font-bold sm:text-lg text-[12px]">Contatti</h3>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-regular fa-envelope text-[10px] sm:text-[16px]"></i>
+                <p class="text-[8px] sm:text-[16px]">Lorem, ipsum dolor.</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone text-[10px] sm:text-[16px]"></i>
+                <p class="text-[8px] sm:text-[16px]">+39 333 342 2452</p>
+            </div>
+        </section>
+
+        <!-- Link -->
+        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit">
+            <h3 class="font-bold sm:text-lg text-[12px]">Link ad altri siti:</h3>
+            <a href="" class="text-[10px] sm:text-[16px] hover:underline">Sito 1</a>
+            <a href="" class="text-[10px] sm:text-[16px] hover:underline">Sito 2</a>
+        </section>
+
+        <!-- Social -->
+        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit justify-center">
+            <h3 class="font-bold sm:text-lg text-[12px]">Social:</h3>
+            <div class="flex gap-3">
+                <i class="fa-brands fa-facebook text-[12px] sm:text-[16px] hover:text-blue-600"></i>
+                <i class="fa-brands fa-instagram text-[12px] sm:text-[16px] hover:text-pink-500"></i>
+            </div>
+        </section>
+    </footer>
+
 </body>
 
 </html>
