@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <!-- Import Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9fc1af3224.js" crossorigin="anonymous"></script>
     <title>Yoga Kounseling</title>
 </head>
@@ -21,12 +24,37 @@
     </header>
     <main>
         <section class="relative bg-[#FAF8F5]">
-            <div class="absolute inset-0">
-                <img src="./img/elementor-placeholder-image.png" alt="Jumbo"
-                    class="w-full h-96 object-cover opacity-60 rounded-b-2xl" />
-                <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
+            <!-- Swiper container -->
+            <div class="swiper h-96 rounded-b-2xl">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide relative">
+                        <img src="./img/immagine1.jpg" alt="Jumbo"
+                            class="w-full h-96 object-cover opacity-50 rounded-b-2xl" />
+                        <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide relative">
+                        <img src="./img/immagine2.jpg" alt="Yoga 2"
+                            class="w-full h-96 object-cover opacity-50 rounded-b-2xl" />
+                        <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide relative">
+                        <img src="./img/immagine3.jpg" alt="Yoga 3"
+                            class="w-full h-96 object-cover opacity-50 rounded-b-2xl" />
+                        <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
+                    </div>
+                </div>
+
+                <!-- Swiper navigation & pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="relative z-10 flex items-center justify-center h-96 text-center px-4">
+
+            <!-- Testo sovrapposto -->
+            <div class="absolute inset-0 flex items-center justify-center text-center px-4 z-10">
                 <div class="max-w-2xl">
                     <h1 class="text-4xl md:text-6xl text-white drop-shadow-lg">
                         Scopri il potere dello YogaKounseling
@@ -87,7 +115,8 @@
         </section>
 
         <!-- Social -->
-        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit justify-center">
+        <section
+            class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit justify-center">
             <h3 class="font-bold sm:text-lg text-[12px]">Social:</h3>
             <div class="flex gap-3">
                 <i class="fa-brands fa-facebook text-[12px] sm:text-[16px] hover:text-blue-600"></i>
@@ -95,6 +124,10 @@
             </div>
         </section>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- File JavaScript esterno -->
+    <script src="./carousel.js"></script>
 
 </body>
 
