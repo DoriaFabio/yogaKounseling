@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.header-gradient {
+    background: linear-gradient(135deg, hsla(139, 57%, 48%, 1) 0%, hsla(189, 21%, 50%, 1) 50%, hsla(270, 54%, 54%, 1) 100%);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, hsla(142, 7%, 76%, 1) 0%, hsla(189, 32%, 52%, 1) 50%, hsla(300, 2%, 12%, 1) 100%);
+}
+
+.footer-gradient {
+    background: linear-gradient(135deg, hsla(270, 54%, 54%, 1) 0%, hsla(189, 21%, 50%, 1) 50%, hsla(139, 57%, 48%, 1) 100%);
+}
