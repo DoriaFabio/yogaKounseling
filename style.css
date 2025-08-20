@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 .header-gradient {
-    background: linear-gradient(135deg, hsla(139, 57%, 48%, 1) 0%, hsla(189, 21%, 50%, 1) 50%, hsla(270, 54%, 54%, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    #c4a7e7 0%,   /* lavanda */
+    #a7d8f0 50%,  /* azzurro chiaro */
+    #b7d7a8 100%  /* verde salvia */
+  );
 }
 
 .hero-gradient {
@@ -9,5 +14,10 @@
 }
 
 .footer-gradient {
-    background: linear-gradient(135deg, hsla(270, 54%, 54%, 1) 0%, hsla(189, 21%, 50%, 1) 50%, hsla(139, 57%, 48%, 1) 100%);
+    background: linear-gradient(
+    135deg,
+    #b7d7a8 0%,  /* verde salvia */
+    #a7d8f0 50%,  /* azzurro chiaro */
+    #c4a7e7 100%   /* lavanda */
+  );
 }
