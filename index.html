@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Import Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9fc1af3224.js" crossorigin="anonymous"></script>
     <title>Yoga Kounseling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-[#F9F6F1]">
     <header class="fixed top-0 left-0 w-full backdrop-blur-md header-gradient shadow-sm z-50">
         <div class="flex justify-between items-center py-4 px-8">
             <!-- Logo -->
@@ -24,7 +24,7 @@
             <!-- Hamburger (mobile) -->
             <button id="menu-btn" class="block md:hidden text-purple-500">
                 <!-- icona hamburger -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -42,8 +42,8 @@
         </div>
         <!-- Menu mobile (inizialmente nascosto) -->
         <div id="mobile-menu"
-            class="hidden md:hidden flex-col items-center gap-6 pb-6 font-nunito text-lg bg-black/40 backdrop-blur-md">
-            <a href="./about.html" class="text-white hover:text-purple-900 transition duration-300">
+            class="hidden md:hidden py-2 font-nunito text-lg bg-black/40">
+            <a href="./about.html" class="text-white hover:text-purple-900 transition duration-300 px-5">
                 About
             </a>
             <a href="./contact.html" class="text-white hover:text-purple-900 transition duration-300">
@@ -52,7 +52,7 @@
         </div>
     </header>
 
-    <main class="pt-13">
+    <main class="pt-13 background-site">
         <section class="relative hero-gradient rounded-b-2xl">
             <!-- Swiper container -->
             <div class="swiper h-96 rounded-b-2xl">
@@ -108,53 +108,53 @@
                 </p>
             </div>
             <div class="w-full md:w-[40%]">
-                <img src="./img/elementor-placeholder-image.png" alt="Immagine yoga" class="rounded-2xl w-full h-auto">
+                <img src="./img/kounseling.jpg" alt="Immagine yoga" class="rounded-2xl w-full h-auto shadow-md">
             </div>
         </section>
 
         <section class="flex items-center flex-col">
             <h2 class="text-center font-bold text-2xl mb-5">Perchè lo YogaKounseling può aiutarti?</h2>
-            <img src="./img/Cerchio.png" alt="Immagine YogaKounseling con cerchio" class="w-[700px]">
+            <img src="./img/Cerchio.png" alt="Immagine YogaKounseling con cerchio" class="w-[700px] rounded-2xl shadow-md">
         </section>
-        <section class="flex items-center flex-col my-20">
+        <section class="flex items-center flex-col py-20">
             <h2 class="font-bold text-center text-2xl">Testimonianze</h2>
         </section>
     </main>
-    <footer class="footer-gradient py-7 grid grid-cols-3 gap-2 justify-items-center px-3">
+    <footer class="footer-gradient py-7 grid grid-cols-4 md:grid-cols-3 gap-2 justify-items-center px-3">
         <!-- Contatti -->
-        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit">
-            <h3 class="font-bold sm:text-lg text-[12px]">Contatti</h3>
+        <section class="flex flex-col col-span-2 md:col-span-1 gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
+            <h3 class="font-bold md:text-lg text-[12px]">Contatti</h3>
 
             <div class="flex items-center gap-2">
-                <i class="fa-regular fa-envelope text-[10px] sm:text-[16px]"></i>
-                <p class="text-[8px] sm:text-[16px]">yogakounseling@gmail.com</p>
+                <i class="fa-regular fa-envelope text-[10px] md:text-[16px]"></i>
+                <p class="text-[9px] md:text-[16px]">yogakounseling@gmail.com</p>
             </div>
 
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-phone text-[10px] sm:text-[16px]"></i>
-                <p class="text-[8px] sm:text-[16px]">Michela Zanin +39 366 748 1224</p>
+                <i class="fa-solid fa-phone text-[10px] md:text-[16px]"></i>
+                <p class="text-[8px] md:text-[16px]">Michela Zanin +39 366 748 1224</p>
             </div>
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-phone text-[10px] sm:text-[16px]"></i>
-                <p class="text-[8px] sm:text-[16px]">Gloria Pacelli +39 328 172 7585</p>
+                <i class="fa-solid fa-phone text-[10px] md:text-[16px]"></i>
+                <p class="text-[8px] md:text-[16px]">Gloria Pacelli +39 328 172 7585</p>
             </div>
         </section>
         <!-- Link -->
-        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit">
-            <h3 class="font-bold sm:text-lg text-[12px]">Link ad altri siti:</h3>
-            <a href="https://www.michelazanin.it/" class="text-[10px] sm:text-[16px] hover:underline" target="_blank"
+        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
+            <h3 class="font-bold md:text-lg text-[10px]">Link ad altri siti:</h3>
+            <a href="https://www.michelazanin.it/" class="text-[10px] md:text-[16px] hover:underline" target="_blank"
                 rel="noopener noreferrer">Sito Michela</a>
-            <a href="" class="text-[10px] sm:text-[16px] hover:underline" target="_blank" rel="noopener noreferrer">Sito
+            <a href="" class="text-[10px] md:text-[16px] hover:underline" target="_blank" rel="noopener noreferrer">Sito
                 2</a>
         </section>
 
         <!-- Social -->
         <section
-            class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit justify-center">
-            <h3 class="font-bold sm:text-lg text-[12px]">Social:</h3>
+            class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit justify-center shadow-2xl">
+            <h3 class="font-bold md:text-lg text-[12px]">Social:</h3>
             <div class="flex gap-3">
-                <i class="fa-brands fa-facebook text-[12px] sm:text-[16px] hover:text-blue-600"></i>
-                <i class="fa-brands fa-instagram text-[12px] sm:text-[16px] hover:text-pink-500"></i>
+                <i class="fa-brands fa-facebook text-[12px] md:text-[16px] hover:text-blue-600"></i>
+                <i class="fa-brands fa-instagram text-[12px] md:text-[16px] hover:text-pink-500"></i>
             </div>
         </section>
     </footer>
