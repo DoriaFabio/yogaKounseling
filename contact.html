@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contatti - Yoga Counseling</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9fc1af3224.js" crossorigin="anonymous"></script>
+    <title>Contatti - YogaKounseling</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="background-site text-[#3A4F41] font-sans">
-    <div class="max-w-5xl mx-auto px-4 py-12">
-        <!-- Titolo -->
+<body class="background-site text-[#3A4F41] font-sans relative">
+    <div class="max-w-5xl mx-auto px-4 py-11">
+        <!--! Titolo !-->
         <h1 class="text-4xl font-bold text-center mb-2">Contattami</h1>
         <p class="text-lg text-center text-gray-600 mb-12">
             Per domande, appuntamenti o informazioni sui percorsi di yoga counseling, compila il modulo oppure utilizza
@@ -19,9 +21,8 @@
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">
-            <!-- 📩 Form di contatto -->
-            <form action="https://formspree.io/f/xyzdpnog" method="POST"
-                class="bg-white p-8 rounded-xl shadow-md space-y-4">
+            <!--! Form di contatto !-->
+            <form id="myForm" class="bg-white p-8 rounded-xl shadow-md space-y-4">
                 <div>
                     <label for="name" class="block font-medium">Nome e Cognome</label>
                     <input type="text" id="name" name="name" required
@@ -46,15 +47,24 @@
                 </button>
             </form>
 
-            <!-- 📞 Info contatti -->
+            <!--! Notifica !-->
+            <div id="formResponse" class="hidden text-green-700 absolute top-5 right-5 p-3 bg-amber-50 rounded-2xl">
+                ✅ Messaggio inviato con successo!
+            </div>
+
+            <!--! Info contatti !-->
             <div class="flex flex-col justify-center p-6 bg-white rounded-xl shadow-md">
                 <h2 class="text-2xl font-semibold mb-4">Recapiti diretti</h2>
-                <p class="mb-2">📍 Via Armonia 12, Milano</p>
-                <p class="mb-2">📞 <a href="tel:+390200000000" class="text-[#3A4F41] hover:underline">+39 02 0000
-                        0000</a></p>
-                <p class="mb-2">📧 <a href="mailto:info@yogacounseling.it"
+                <p class="mb-2"><i class="fa-solid fa-map-pin align-middle"></i> Via Armonia 12, Milano</p>
+                <p class="mb-2"><i class="fa-solid fa-phone align-middle"></i> <a href="tel:+393667481224"
+                        class="text-[#3A4F41] hover:underline">Michela Zanin +39
+                        366 748 1224</a></p>
+                <p class="mb-2"><i class="fa-solid fa-phone align-middle"></i> <a href="tel:+393281727585"
+                        class="text-[#3A4F41] hover:underline">Gloria Pacelli +39
+                        328 172 7585</a></p>
+                <p class="mb-2"><i class="fa-regular fa-envelope align-middle"></i> <a
+                        href="mailto:yogakounseling@gmail.com"
                         class="text-[#3A4F41] hover:underline">yogakounseling@gmail.com</a></p>
-                <p class="mb-2">🕒 Lun - Ven: 9:00 - 18:00</p>
                 <!-- 🗺️ Google Maps -->
                 <div class="rounded-xl overflow-hidden shadow-md">
                     <iframe
@@ -63,7 +73,10 @@
                 </div>
             </div>
         </div>
+        <a href="./index.html" class="hover:underline flex justify-center items-center mt-5 text-2xl">Torna alla
+            home</a>
     </div>
 </body>
+<script src="sendmail.js"></script>
 
 </html>

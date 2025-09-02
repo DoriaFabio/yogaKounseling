@@ -13,46 +13,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#F9F6F1]">
-    <header class="fixed top-0 left-0 w-full backdrop-blur-md header-gradient shadow-sm z-50">
+<body class="background-site text-[#3A4F41] font-sans">
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-xs shadow-sm z-50">
         <div class="flex justify-between items-center py-4 px-8">
             <!-- Logo -->
-            <h1 class="font-playfair text-purple-700 text-3xl tracking-wide">
+            <h1 class="text-3xl tracking-wide">
                 YogaKounseling
             </h1>
 
             <!-- Hamburger (mobile) -->
-            <button id="menu-btn" class="block md:hidden text-purple-500">
+            <button id="menu-btn" class="block md:hidden">
                 <!-- icona hamburger -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
 
             <!-- Menu desktop -->
-            <nav id="menu" class="hidden md:flex gap-8 font-nunito text-lg">
-                <a href="./about.html" class="text-purple-500 hover:text-purple-900 transition duration-300">
+            <nav id="menu" class="hidden md:flex gap-8 text-lg">
+                <a href="./about.html" class=" hover:text-purple-400 transition duration-300">
                     About
                 </a>
-                <a href="./contact.html" class="text-purple-500 hover:text-purple-900 transition duration-300">
+                <a href="./contact.html" class="hover:text-purple-400 transition duration-300">
                     Contact
                 </a>
             </nav>
         </div>
         <!-- Menu mobile (inizialmente nascosto) -->
-        <div id="mobile-menu"
-            class="hidden md:hidden py-2 font-nunito text-lg bg-black/40">
-            <a href="./about.html" class="text-white hover:text-purple-900 transition duration-300 px-5">
+        <div id="mobile-menu" class="hidden md:hidden py-2 text-lg bg-black/40">
+            <a href="./about.html" class="hover:text-purple-400 transition duration-300 px-5">
                 About
             </a>
-            <a href="./contact.html" class="text-white hover:text-purple-900 transition duration-300">
+            <a href="./contact.html" class="hover:text-purple-400 transition duration-300">
                 Contact
             </a>
         </div>
     </header>
 
-    <main class="pt-13 background-site">
+    <main class="pt-[69px]">
         <section class="relative hero-gradient rounded-b-2xl">
             <!-- Swiper container -->
             <div class="swiper h-96 rounded-b-2xl">
@@ -114,15 +112,17 @@
 
         <section class="flex items-center flex-col">
             <h2 class="text-center font-bold text-2xl mb-5">Perchè lo YogaKounseling può aiutarti?</h2>
-            <img src="./img/Cerchio.png" alt="Immagine YogaKounseling con cerchio" class="w-[700px] rounded-2xl shadow-md">
+            <img src="./img/Cerchio.png" alt="Immagine YogaKounseling con cerchio"
+                class="w-[700px] rounded-2xl shadow-md">
         </section>
         <section class="flex items-center flex-col py-20">
             <h2 class="font-bold text-center text-2xl">Testimonianze</h2>
         </section>
     </main>
-    <footer class="footer-gradient py-7 grid grid-cols-4 md:grid-cols-3 gap-2 justify-items-center px-3">
+    <footer class="bg-[#ede6dabe] py-7 grid grid-cols-4 md:grid-cols-3 gap-2 justify-items-center px-3">
         <!-- Contatti -->
-        <section class="flex flex-col col-span-2 md:col-span-1 gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
+        <section
+            class="flex flex-col col-span-2 md:col-span-1 gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
             <h3 class="font-bold md:text-lg text-[12px]">Contatti</h3>
 
             <div class="flex items-center gap-2">
@@ -140,7 +140,8 @@
             </div>
         </section>
         <!-- Link -->
-        <section class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
+        <section
+            class="flex flex-col gap-2 items-center p-3 border border-gray-300 rounded-lg bg-gray-50 w-fit shadow-2xl">
             <h3 class="font-bold md:text-lg text-[10px]">Link ad altri siti:</h3>
             <a href="https://www.michelazanin.it/" class="text-[10px] md:text-[16px] hover:underline" target="_blank"
                 rel="noopener noreferrer">Sito Michela</a>
