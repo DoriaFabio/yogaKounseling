@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./style.css -o ./output.css --watch",
+    "build:css": "tailwindcss -i ./style.css -o ./output.css",
     "dev:server": "serve .",
     "dev": "concurrently \"npm run build:css\" \"npm run dev:server\""
   },
@@ -21,10 +21,6 @@
     "url": "https://github.com/DoriaFabio/yogaKounseling/issues"
   },
   "homepage": "https://github.com/DoriaFabio/yogaKounseling#readme",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
-  },
   "devDependencies": {
     "concurrently": "^9.2.0",
     "serve": "^14.2.4"
