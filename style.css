@@ -24,6 +24,6 @@
 
 .background-site {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("./img/lavanda4.jpg") no-repeat center center/cover;
 }
