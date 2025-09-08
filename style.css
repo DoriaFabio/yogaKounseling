@@ -24,6 +24,6 @@
 
 .background-site {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    linear-gradient(rgba(245, 243, 255, 0.65), rgba(245, 243, 255, 0.65)),
     url("./img/lavanda4.jpg") no-repeat center center/cover;
 }
