@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+  body, p, a, li, span {
+    font-family: 'Lato', sans-serif;
+  }
+}
 
 .header-gradient {
   background: linear-gradient(
@@ -13,17 +21,18 @@
     background: linear-gradient(135deg, hsla(142, 7%, 76%, 1) 0%, hsla(189, 32%, 52%, 1) 50%, hsla(300, 2%, 12%, 1) 100%);
 }
 
-.footer-gradient {
-    background: linear-gradient(
-    135deg,
-    #b7d7a8 0%,  /* verde salvia */
-    #a7d8f0 50%,  /* azzurro chiaro */
-    #c4a7e7 100%   /* lavanda */
-  );
-}
+// .footer-gradient {
+//    background: linear-gradient(
+//    135deg,
+//    #b7d7a8 0%,  /* verde salvia */
+//    #a7d8f0 50%,  /* azzurro chiaro */
+//    #c4a7e7 100%   /* lavanda */
+//  );
+// } 
 
 .background-site {
   background:
-    linear-gradient(rgba(245, 243, 255, 0.65), rgba(245, 243, 255, 0.65)),
+    linear-gradient(rgba(167, 139, 250, 0.6), rgba(233, 213, 255, 0.6)),
     url("./img/lavanda4.jpg") no-repeat center center/cover;
 }
+
