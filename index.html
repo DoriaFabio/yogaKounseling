@@ -4,38 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Import Swiper CSS -->
+    <!--? Import Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Font Awesome -->
+    <!--? Font Awesome -->
     <script src="https://kit.fontawesome.com/9fc1af3224.js" crossorigin="anonymous"></script>
-    <!-- Google Font -->
+    <!--? Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
+    <!--? Titolo -->
     <title>Yoga Kounseling</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!--? Tailwind production -->
+    <link rel="stylesheet" href="./public/tailwind.css">
 </head>
 
 <body class="background-site text-[#3B0764] font-sans">
+    <!--! Header -->
     <header class="fixed top-0 left-0 w-full bg-violet-200/80 backdrop-blur-xs shadow-sm z-50">
         <div class="flex justify-between items-center py-4 px-8">
-            <!-- Logo -->
-            <h1 class="text-3xl tracking-wide text-violet-800 font-bold">
+            <!--todo Logo -->
+            <h1 class="sm:text-[33px] text-3xl tracking-wide text-violet-800 font-bold">
                 YogaKounseling
             </h1>
 
-            <!-- Hamburger (mobile) -->
+            <!--todo Hamburger (mobile) -->
             <button id="menu-btn" class="block md:hidden">
-                <!-- icona hamburger -->
+                <!--? icona hamburger -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
 
-            <!-- Menu desktop -->
+            <!--todo Menu desktop -->
             <nav id="menu" class="hidden md:flex gap-8 text-lg">
                 <a href="./about.html" class=" hover:text-purple-600 font-semibold transition duration-300">
                     Chi siamo
@@ -45,7 +47,7 @@
                 </a>
             </nav>
         </div>
-        <!-- Menu mobile (inizialmente nascosto) -->
+        <!--todo Menu mobile (inizialmente nascosto) -->
         <div id="mobile-menu" class="hidden md:hidden py-2 text-lg bg-purple-500/30">
             <a href="./about.html" class="hover:text-purple-400 transition duration-300 px-5">
                 Chi siamo
@@ -55,25 +57,26 @@
             </a>
         </div>
     </header>
-
-    <main class="pt-[69px]">
+    <!--! Main -->
+    <main class="pt-[68px] sm:pt-[73px]">
+        <!--! Hero -->
         <section class="relative hero-gradient rounded-b-2xl">
-            <!-- Swiper container -->
+            <!--todo Swiper container -->
             <div class="swiper h-[400px] md:h-[500px] rounded-b-2xl">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
+                    <!--? Slide 1 (frecce) -->
                     <div class="swiper-slide relative">
                         <img src="./img/frecce.jpg" alt="Jumbo"
                             class="w-full h-[400px] md:h-[500px] object-cover opacity-70 rounded-b-2xl" />
                         <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
                     </div>
-                    <!-- Slide 2 -->
+                    <!--? Slide 2 (uccelli) -->
                     <div class="swiper-slide relative">
                         <img src="./img/uccelli.jpg" alt="Yoga 2"
                             class="w-full h-[400px] md:h-[500px] object-cover opacity-70 rounded-b-2xl" />
                         <div class="absolute inset-0 bg-black/30 rounded-b-2xl"></div>
                     </div>
-                    <!-- Slide 3 -->
+                    <!--? Slide 3 (albero) -->
                     <div class="swiper-slide relative">
                         <img src="./img/albero.jpg" alt="Yoga 3"
                             class="w-full h-[400px] md:h-[500px] object-cover opacity-70 rounded-b-2xl" />
@@ -81,13 +84,13 @@
                     </div>
                 </div>
 
-                <!-- Swiper navigation & pagination -->
+                <!--? Swiper navigation & pagination -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
 
-            <!-- Testo sovrapposto -->
+            <!--todo Testo sovrapposto -->
             <div class="absolute inset-0 flex items-center justify-center text-center px-4 z-10 pointer-events-none">
                 <div class="max-w-2xl">
                     <h1 class="text-4xl md:text-6xl text-[#F5F5F5] font-medium drop-shadow-lg">
@@ -96,7 +99,9 @@
                 </div>
             </div>
         </section>
+        <!--! Sezione cos'è -->
         <section class="flex flex-col md:flex-row my-10 md:my-20 mx-5 md:mx-20 lg:mx-52 gap-6 md:gap-10">
+            <!--todo paragrafo -->
             <div class="w-full md:w-[60%] py-5 md:py-10">
                 <h2 class="text-xl font-bold">Che cos'è lo YogaKounseling®?</h2>
                 <p class="text-[16px]">
@@ -111,16 +116,18 @@
                     e la qualità della vita.
                 </p>
             </div>
+            <!--todo immagine -->
             <div class="w-full md:w-[40%]">
                 <img src="./img/kounseling1.jpg" alt="Immagine yoga" class="rounded-2xl w-full h-auto shadow-md">
             </div>
         </section>
-
+        <!--! Sezione yogakounseling aiuto -->
         <section class="flex items-center flex-col">
             <h2 class="text-center font-bold text-2xl mb-5">Perchè lo YogaKounseling può aiutarti?</h2>
             <img src="./img/Cerchio1.png" alt="Immagine YogaKounseling con cerchio"
                 class="w-[700px] rounded-2xl shadow-md">
         </section>
+        <!--! Testimonianze -->
         <section class="flex flex-col items-center py-20 mx-4 md:mx-14">
             <h2 class="font-bold text-center text-2xl">Testimonianze</h2>
             <!-- wrapper che taglia -->
@@ -140,7 +147,8 @@
 
                     <div
                         class="flex-shrink-0 w-[90%] sm:w-[70%] md:w-auto p-4 bg-white shadow-md rounded-2xl snap-center transition-transform duration-500 hover:scale-105 hover:shadow-xl">
-                        "Prima la rabbia controllava la mia vita e rovinava le mie relazioni. Ora grazie a questo percorso ho imparato a riconoscere i segnali prima
+                        "Prima la rabbia controllava la mia vita e rovinava le mie relazioni. Ora grazie a questo
+                        percorso ho imparato a riconoscere i segnali prima
                         dell'esplosione e a scoprire cosa si nascondeva dietro quell'emozione: spesso frustrazione e
                         paura di non essere capita. Oggi quando sento montare la tensione so fermarmi, respirare e
                         trasformare gli scontri in dialoghi costruttivi. Sono stata sorpresa di quanto sono migliorate

@@ -1,28 +1,25 @@
 {
-  "name": "yogakounseling",
+  "name": "campo-minato",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./style.css -o ./output.css",
-    "dev:server": "serve .",
-    "dev": "concurrently \"npm run build:css\" \"npm run dev:server\""
+    "build:css": "tailwindcss -c tailwind.config.js -i ./input.css -o ./public/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i ./input.css -o ./public/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoriaFabio/yogaKounseling.git"
+    "url": "git+https://github.com/DoriaFabio/campo-minato.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/DoriaFabio/yogaKounseling/issues"
+    "url": "https://github.com/DoriaFabio/campo-minato/issues"
   },
-  "homepage": "https://github.com/DoriaFabio/yogaKounseling#readme",
+  "homepage": "https://github.com/DoriaFabio/campo-minato#readme",
   "devDependencies": {
-    "concurrently": "^9.2.0",
-    "serve": "^14.2.4"
+    "tailwindcss": "^4.1.13"
   }
 }
