@@ -45,6 +45,16 @@
                         class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#A5C9CA]"></textarea>
                 </div>
 
+                <!-- Checkbox consenso GDPR -->
+                <div class="mt-2 flex">
+                    <input type="checkbox" id="privacyConsent" required class="mr-1">
+                    <label for="privacyConsent" class="text-[12px]">
+                        Acconsento al trattamento dei miei dati personali come indicato nella
+                        <a href="./privacy.html" class="underline text-blue-600 hover:text-blue-800"
+                            target="_blank">Privacy Policy</a>.
+                    </label>
+                </div>
+
                 <button type="submit"
                     class="mt-4 bg-[#D8CCE0] text-[#3A4F41] px-6 py-3 rounded-lg shadow-md hover:bg-violet-300 transition duration-500">
                     Invia
@@ -54,6 +64,12 @@
             <!--! Notifica !-->
             <div id="formResponse" class="hidden text-green-700 absolute top-5 right-5 p-3 bg-amber-50 rounded-2xl">
                 ✅ Messaggio inviato con successo!
+            </div>
+            <div id="formResponseError" class="hidden text-red-700 absolute top-5 right-5 p-3 bg-red-100 rounded-2xl">
+                ❌ Errore nell'invio. Riprova più tardi.
+            </div>
+            <div id="formNotConnection" class="hidden text-yellow-600 absolute top-5 right-5 p-3 bg-yellow-100 rounded-2xl">
+                ⚠️ Errore di connessione, riprova più tardi.
             </div>
 
             <!--! Info contatti !-->
