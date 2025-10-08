@@ -2,6 +2,8 @@ const form = document.getElementById("myForm");
 const responseBox = document.getElementById("formResponse");
 const responseError = document.getElementById("formResponseError");
 const formNotConnection =  document.getElementById("formNotConnection");
+const formName = document.getElementById("name");
+const messageName = document.getElementById("messageName");
 let timeoutId;
 
 form.addEventListener("submit", async function (e) {
@@ -36,7 +38,7 @@ form.addEventListener("submit", async function (e) {
             window.scrollTo({ top: 0, behavior: "smooth" });
             if (timeoutId) clearTimeout(timeoutId);
             timeoutId = setTimeout(() => {
-                responseBox.classList.add("hidden");
+                responseError.classList.add("hidden");
             }, 3000);
             form.reset();
         }
@@ -45,8 +47,9 @@ form.addEventListener("submit", async function (e) {
         window.scrollTo({ top: 0, behavior: "smooth" });
         if (timeoutId) clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
-            responseBox.classList.add("hidden");
+            formNotConnection.classList.add("hidden");
         }, 3000);
         form.reset();
     }
 });
+
