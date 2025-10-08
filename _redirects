@@ -1,0 +1,16 @@
+# --- URL puliti che servono direttamente le pagine HTML ---
+/              /index.html    200
+/about         /about.html    200
+/contact       /contact.html  200
+/privacy       /privacy.html  200
+/cookie        /cookie.html   200
+
+# --- Redirect permanenti (SEO friendly) ---
+/index.html    /              301
+/about.html    /about         301
+/contact.html  /contact       301
+/privacy.html  /privacy       301
+/cookie.html   /cookie        301
+
+# --- (Opzionale) fallback per eventuali URL non trovati ---
+/*             /index.html    200
